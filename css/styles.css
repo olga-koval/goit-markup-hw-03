@@ -19,6 +19,8 @@ body {
   background-color: var(--primary-bgd-color);
 }
 
+/* Utilits */
+
 .link {
   text-decoration: none;
 }
@@ -35,6 +37,23 @@ body {
 
 .list .active {
   color: var(--accent-color);
+}
+
+.page-header {
+  /* background-color: wheat; */
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
 }
 
 /* WebStudio Logo */
@@ -55,12 +74,26 @@ body {
 
 /* Website navigation */
 
-/* .site-nav {
-  display: flex;
-} */
-
 .site-nav {
   display: flex;
+  margin-left: 93px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -71,6 +104,15 @@ body {
 /* Website cotacts */
 
 .site-nav-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-nav-contacts .contacts-display:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -78,35 +120,49 @@ body {
   color: var(--primary-text-color);
 }
 
-/* <!-- Service order section -- >  */
+/* <!-- Hero section -- >  */
 
 .hero {
   background-color: var(--secondary-bgd-color);
+  text-align: center;
+  padding: 200px 200px;
+  margin-bottom: 94px;
 }
 
 .hero-title {
+  text-align: center;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+
+  margin-bottom: 30px;
 }
 
 .hero-button {
   font-family: inherit;
   font-size: 16px;
   line-height: 2;
-  display: flex;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  min-width: 200px;
+  min-height: 50px;
   border-radius: 4px;
+  padding: 10px 32px;
 }
 
 /* Strong sides section */
+
+.strong-sides {
+  margin-bottom: 94px;
+}
 
 .subsection-title {
   font-weight: 700;
@@ -119,6 +175,10 @@ body {
 
 /* What we do section */
 
+.whatwedo {
+  margin-bottom: 94px;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -127,10 +187,14 @@ body {
   color: var(--title-text-color);
 }
 
-/* Ou Team section */
+/* Our Team section */
 
 .team {
   background-color: #f5f4fa;
+}
+
+.team-description {
+  /* here I will add positioning */
 }
 
 .team-names {
