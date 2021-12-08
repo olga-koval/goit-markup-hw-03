@@ -104,7 +104,7 @@
       <!-- What we do -->
       <section>
         <div class="container whatwedo">
-          <h2 class="whatwedo-title">Чем мы занимаемся</h2>
+          <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="whatwedo-pictures list">
             <li class="whatwedo-pictures">
               <img src="./images/box-1.jpg" alt="Картинка 1" width="370" />
@@ -120,25 +120,25 @@
       </section>
       <!-- Out Team -->
       <section class="team">
-        <div class="container team-description">
+        <div class="container ourteam-container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="flex-container list">
+            <li class="flex-element team-description">
               <img src="./images/img.jpg" alt="Игорь Демьяненко" width="270" />
               <h3 class="team-names">Игорь Демьяненко</h3>
               <p class="team-professions">Product Designer</p>
             </li>
-            <li>
+            <li class="flex-element team-description">
               <img src="./images/img-1.jpg" alt="Ольга Репина" width="270" />
               <h3 class="team-names">Ольга Репина</h3>
               <p class="team-professions">Frontend Developer</p>
             </li>
-            <li>
+            <li class="flex-element team-description">
               <img src="./images/img-2.jpg" alt="Николай Тарасов" width="270" />
               <h3 class="team-names">Николай Тарасов</h3>
               <p class="team-professions">Marketing</p>
             </li>
-            <li>
+            <li class="flex-element team-description">
               <img src="./images/img-3.jpg" alt="Михаил Ермаков" width="270" />
               <h3 class="team-names">Михаил Ермаков</h3>
               <p class="team-professions">UI Designer</p>
@@ -149,20 +149,24 @@
     </main>
     <!-- Page Footer -->
     <footer class="footer">
-      <a class="logo" href=""
-        ><span class="logo-web">Web</span
-        ><span class="logo-studio-footer">Studio</span></a
-      >
-      <address>
-        <p class="addess-footer">г. Киев, пр-т Леси Украинки, 26</p>
-        <a href="mailto:info@example.com" class="contacts-footer link"
-          >info@example.com</a
-        >
-        <br />
-        <a href="tel:+380961111111" class="contacts-footer link"
-          >+38 096 111 11 11</a
-        >
-      </address>
+      <div class="container footer-container">
+        <div class="logo-footer">
+          <a class="logo" href=""
+            ><span class="logo-web">Web</span
+            ><span class="logo-studio-footer">Studio</span></a
+          >
+        </div>
+        <address>
+          <p class="addess-footer">г. Киев, пр-т Леси Украинки, 26</p>
+          <a class="contacts-footer link" href="mailto:info@example.com"
+            >info@example.com</a
+          >
+          <br />
+          <a class="contacts-footer link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </address>
+      </div>
     </footer>
   </body>
 </html>

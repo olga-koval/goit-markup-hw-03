@@ -186,7 +186,6 @@ body {
 
 .flex-element {
   width: 270px;
-  background-color: yellowgreen;
   margin-right: 30px;
 }
 
@@ -205,6 +204,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 
 /* What we do section */
@@ -213,14 +213,15 @@ body {
   margin-bottom: 94px;
 }
 
-.whatwedo-title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .whatwedo-pictures {
@@ -238,8 +239,13 @@ body {
   background-color: #f5f4fa;
 }
 
+.ourteam-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-description {
-  /* here I will add positioning */
+  text-align: center;
 }
 
 .team-names {
@@ -263,6 +269,15 @@ body {
   background-color: var(--secondary-bgd-color);
 }
 
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+}
+
 .logo-studio-footer {
   color: var(--secondary-text-color);
 }
@@ -273,6 +288,8 @@ body {
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  margin-bottom: 9px;
 }
 
 .contacts-footer {
@@ -281,9 +298,25 @@ body {
   line-height: 2;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
+  margin-bottom: 9px;
+}
+
+.contacts-footer:last-child {
+  margin-bottom: 0;
 }
 
 /* Portfolio CSS */
+
+.main-menu-portfolio {
+  margin-bottom: 94px;
+}
+
+.portfolio-button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
 .portfolio-button {
   font-family: "Roboto", sans-serif;
@@ -295,8 +328,17 @@ body {
   color: var(--title-text-color);
   background-color: var(--third-bgd-color);
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+
+  padding: 6px 22px;
+  margin-right: 8px;
 }
+
+/* .portfolio-button:last-child {
+  margin-right: 0;
+  Why it doesn't work????????????????????
+} */
 
 .portfolio-button:hover,
 .portfolio-button:focus,
@@ -329,4 +371,28 @@ body {
   line-height: 2;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.flex-element-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flex-element-portfolio:last-child {
+  margin-right: 0;
+}
+
+.works {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.works:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.portfolio-picture {
+  margin: 20px 24px;
 }
