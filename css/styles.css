@@ -219,13 +219,16 @@ body {
   margin-bottom: 50px;
 }
 
-.whatwedo-pictures {
+.whatwedo-list {
   display: flex;
+}
+
+.whatwedo-list {
   margin-right: 30px;
 }
 
-.whatwedo-pictures:last-child {
-  margin-right: 0;
+.whatwedo-pictures:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Our Team section */
