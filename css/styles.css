@@ -182,9 +182,6 @@ body {
 .flex-element {
   width: 270px;
   margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .flex-element:first-child {
@@ -235,6 +232,19 @@ body {
 
 .team {
   background-color: #f5f4fa;
+}
+
+.flex-element-team {
+  max-width: 270px;
+  max-height: 368px;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.flex-element-team:last-child {
+  margin-right: 0;
 }
 
 .team-description {
@@ -331,11 +341,6 @@ body {
   margin-right: 8px;
 }
 
-/* .portfolio-button:last-child {
-  margin-right: 0;
-  Why it doesn't work????????????????????
-} */
-
 .portfolio-button:hover,
 .portfolio-button:focus,
 .portfolio-button:active {
@@ -352,24 +357,6 @@ body {
   color: var(--title-text-color);
 }
 
-.portfolio-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-  margin-bottom: 4px;
-}
-
-.portfolio-text {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
 .flex-element-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -381,9 +368,7 @@ body {
 }
 
 .works {
-  max-width: 370px;
   margin-right: 30px;
-  border: 1px solid #eeeeee;
 }
 
 .works:nth-child(-n + 6) {
@@ -394,6 +379,27 @@ body {
   margin-right: 0;
 }
 
-.portfolio-picture {
-  margin: 20px 24px;
+.works-description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.works-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+
+.works-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
